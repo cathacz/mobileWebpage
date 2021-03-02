@@ -20,40 +20,48 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* === header === */
-
+/*  #body >>>  div um alles*/
+#body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* nav >>> logo + nav */
 nav {
+  width: 100%;
+  height: auto;
   margin-top: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
   margin-bottom: 5%;
-  width: 80%;
-  display: inline-flex;
-  position: relative;
+  border: solid khaki 3px;
 }
 ul {
-  display: inline-flex;
+  float: right;
 }
 ul li {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 9%;
   list-style-type: none;
   text-transform: uppercase;
-
+  text-align: right;
   font-size: 100%;
 }
 a {
   text-decoration: none;
 }
-nav span {
-  position: relative;
+.navi {
   width: 50%;
-  display: inline-flex;
+  height: auto;
+  /* margin-top: auto;
+  margin-bottom: auto; */
 }
-nav span img {
-  position: fixed;
+.one {
+  background-color: honeydew;
   float: left;
+}
+.one img {
+  float: left;
+}
+.two {
+  background-color: hotpink;
+  float: right;
 }
 /* === body === */
 h1 {
@@ -66,18 +74,17 @@ h1 {
 p {
   line-height: 1.2;
   font-size: 1.2vw;
-  margin: 5%;
 }
-section {
-  display: inline-flex;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-}
-section span {
-  position: relative;
+.art {
   width: 50%;
-  display: inline-flex;
+}
+.left {
+  background-color: indianred;
+  float: left;
+}
+.right {
+  background-color: indigo;
+  float: right;
 }
 button {
   font-weight: bold;
@@ -86,26 +93,21 @@ button {
   border-radius: 5px;
   padding: 2%;
   width: 8vw;
-  display: inline-flexbox;
-  position: relative;
+  display: inline;
+
   margin-left: auto;
   margin-right: auto;
   border: none;
 }
-/* .butt {
-  position: relative;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-} */
+
 button:nth-of-type(2) {
   background-color: blue;
 }
 img {
-  width: 15vw;
+  width: 12vw;
   height: auto;
 }
-
+/* überlappung img */
 img:nth-of-type(1) {
   position: relative;
   right: -25%;
