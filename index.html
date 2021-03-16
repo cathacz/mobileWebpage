@@ -3,70 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clear the Air Challenge</title>
-    <link rel="stylesheet" href="../mobileWebpage/CSS/index.css" />
+    <title>mobileWebpage</title>
+    <link rel="stylesheet" href="../mobileWebpage/css/index.css" />
   </head>
-  <!-- 
-
-I will start over – here is nothing working anymore....
-
-
-   -->
   <body>
-    <div id="body">
-      <!-- Navigation -->
+    <!-- header including navi -->
+    <header>
       <nav>
-        <span class="navi one">
+        <div>
           <img
-            id="logo"
             src="../mobileWebpage/img/logo_001.png"
-            alt="challenge logo"
+            alt="Logo: Clear the air challenge – drive down your miles"
           />
-        </span>
-        <span class="navi two">
-          <ul>
+        </div>
+        <div>
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="side-menu">
             <li><a href="products">Products</a></li>
             <li><a href="prices">Prices</a></li>
-            <li><a href="blog">Blog</a></li>
+            <li><a href="blog">Blogs</a></li>
             <li><a href="team">Team</a></li>
             <li><a href="login">Login</a></li>
-            <li><a href="signup">Sign up</a></li>
+            <li><a href="signin">Sign in</a></li>
           </ul>
-        </span>
+        </div>
       </nav>
-      <!-- body -->
-      <div>
-        <span class="art left">
-          <div>
-            <h1>Make your Startup Website with our template!</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              optio tempore aliquam velit dolorum, iste rerum, natus odio soluta
-              delectus laudantium possimus explicabo. Eos at praesentium,
-              explicabo iusto porro laborum corrupti. Ea dolores eaque, natus,
-              magnam saepe impedit atque minus molestiae quis quasi dicta
-              blanditiis!
-            </p>
-            <!-- Buttons -->
-            <div class="butt">
-              <button>Learn more</button> <button>Get the App</button>
-            </div>
-          </div>
-        </span>
-        <!-- Mobile Phones -->
-        <span class="art right">
-          <div>
-            <img
-              src="../mobileWebpage/img/phone_002.png"
-              alt="black mobile phone"
-            />
-            <img
-              src="../mobileWebpage/img/phone_001.png"
-              alt="white mobile phone"
-            />
-          </div>
-        </span>
+    </header>
+    <!-- main part -->
+    <div class="body">
+      <div class="text">
+        <h1>Make your StartUp website with our template</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum debitis
+          autem nobis sapiente, obcaecati, dolorum assumenda perspiciatis
+          impedit quidem rem, veritatis enim. Quas, eligendi non et id
+          voluptates molestiae expedita ad dolore cupiditate consequatur officia
+          inventore veritatis corrupti accusantium, voluptate quidem ipsum,
+          nulla velit. Accusantium?
+        </p>
+        <div class="buttons"><button type="submit"></button></div>
+      </div>
+      <div class="phone">
+        <img
+          src="../mobileWebpage/img/phone_002.png"
+          alt="black mobile phone"
+        />
+        <img
+          src="../mobileWebpage/img/phone_001.png"
+          alt="white mobile phone"
+        />
       </div>
     </div>
+    <script>
+      let clicked = false;
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        clicked = !clicked;
+        console.log("click");
+        if (clicked) {
+          document.querySelector(".side-menu").style.cssText =
+            "display: block; position: absolute; top: 3vh; left: 0; z-index: 1;";
+        } else
+          document.querySelector(".side-menu").style.cssText = "display. none;";
+      });
+    </script>
   </body>
 </html>
