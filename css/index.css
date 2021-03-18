@@ -70,7 +70,9 @@ a {
   display: inline;
 }
 .text {
-  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 50%;
 }
@@ -83,6 +85,23 @@ a {
 img {
   width: 12vw;
   height: auto;
+}
+
+.buttons {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: olive 2px dashed;
+  width: 100%;
+  flex-direction: row;
+}
+button {
+  padding: 0.5rem;
+  background-color: green;
+  border: none;
+  border-radius: 0.2rem;
+  align-self: center;
 }
 /* überlappung img */
 img:nth-of-type(1) {
