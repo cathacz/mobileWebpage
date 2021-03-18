@@ -40,6 +40,7 @@ nav img {
   display: flex;
 }
 ul {
+  border: seagreen 2px dashed;
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -47,6 +48,7 @@ ul {
   justify-content: space-between;
   text-transform: uppercase;
   float: right;
+  width: fit-content;
 }
 li {
   text-align: right;
@@ -96,12 +98,26 @@ img {
   width: 100%;
   flex-direction: row;
 }
+.buttons :nth-child(2) {
+  background-color: royalblue;
+}
 button {
   padding: 0.5rem;
   background-color: green;
   border: none;
   border-radius: 0.2rem;
   align-self: center;
+}
+button:hover,
+button:focus {
+  cursor: pointer;
+  opacity: 75%;
+}
+
+button:active,
+button:focus {
+  outline: none;
+  border: none;
 }
 /* überlappung img */
 img:nth-of-type(1) {
