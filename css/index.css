@@ -71,9 +71,9 @@ main {
   display: flex;
   justify-content: center;
 }
-.body div div {
+/* .body div div {
   display: inline;
-}
+} */
 .text {
   display: flex;
   flex-direction: column;
@@ -90,26 +90,19 @@ div p {
 }
 .phone {
   border: 2px dashed palegoldenrod;
-
   display: flex;
-  position: relative;
-  justify-content: right;
-  float: right;
+  justify-content: center;
+  align-items: center;
 }
 img {
   width: 16vw;
-  height: auto;
   display: flex;
-
-  justify-self: right;
-  float: right;
 }
 
 .buttons {
   display: flex;
-  justify-content: left;
-  align-items: center;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 button {
@@ -133,10 +126,10 @@ button:focus {
   color: black;
 }
 .blue {
-  background-color: royalblue;
+  background-color: rgb(68, 135, 173);
 }
 .green {
-  background-color: green;
+  background-color: rgb(54, 160, 54);
 }
 .phone {
   align-items: flex-end;
@@ -146,6 +139,48 @@ button:focus {
   position: relative;
   right: -7.5vw;
   bottom: -1vh;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1160px) {
+  /* burger menu */
+  .hamburger {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+  }
+  .hamburger div {
+    width: 2.5rem;
+    border: whitesmoke 2px solid;
+    border-radius: 25%;
+  }
+  .side-menu {
+    width: 15vw;
+    height: 30vh;
+
+    display: none;
+  }
+  /* general setting */
+  nav {
+    width: 75vw;
+  }
+  nav img {
+    width: 15vw;
+    display: flex;
+    align-self: flex-start;
+  }
+  main {
+    width: 75vw;
+    height: 80vh;
+  }
+  .body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -166,6 +201,24 @@ button:focus {
     width: 15vw;
     height: 30vh;
     display: none;
+  }
+  /* general setting */
+  nav {
+    width: 90vw;
+  }
+  nav img {
+    width: 20vw;
+    display: flex;
+    align-self: flex-start;
+  }
+  main {
+    width: 90vw;
+    height: 80vh;
+  }
+  .body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
 }
 /* hamburger menu */
