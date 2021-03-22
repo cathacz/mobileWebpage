@@ -5,7 +5,7 @@
 @font-face {
   font-family: "Work Sans";
   src: url("../fonts/WorkSans-Light.ttf");
-  src: url("../fonts/WorkSans-Medium.ttf");
+  /* src: url("../fonts/WorkSans-Medium.ttf"); */
 }
 
 * {
@@ -24,47 +24,52 @@ body {
 
 /* ================================== header */
 header {
-  border: tomato dashed 2px;
   display: flex;
   justify-content: center;
 }
 nav {
-  border: khaki dashed 2px;
-  width: 50vw;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  width: 55vw;
+  margin-top: 4vh;
+  margin-bottom: 5vh;
   display: flex;
+
+  justify-content: space-between;
+  align-items: center;
 }
 nav img {
   width: 10vw;
   display: flex;
+  align-self: flex-start;
 }
+
 nav ul {
-  border: seagreen 2px dashed;
   display: flex;
   flex-direction: row;
   list-style: none;
-  align-items: center;
+
   justify-content: space-evenly;
   text-transform: uppercase;
-  float: right;
 }
 nav ul li {
-  margin-left: 1%;
+  margin-left: 2rem;
   display: flex;
   flex-direction: row;
+  font-weight: bold;
 }
 a {
   text-decoration: none;
 }
 /* ============================= body */
-.body {
-  width: 50vw;
+main {
   display: flex;
-  justify-content: center;
-  align-self: center;
+  width: 55vw;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+}
+.body {
+  display: flex;
+  justify-content: center;
 }
 .body div div {
   display: inline;
@@ -76,11 +81,12 @@ a {
   align-items: center;
 }
 div h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 div p {
   margin-top: 2vh;
-  margin-bottom: 1vh;
+  margin-bottom: 3vh;
+  font-weight: 500;
 }
 .phone {
   border: 2px dashed palegoldenrod;
@@ -91,7 +97,7 @@ div p {
   float: right;
 }
 img {
-  width: 14vw;
+  width: 16vw;
   height: auto;
   display: flex;
 
@@ -100,36 +106,37 @@ img {
 }
 
 .buttons {
-  margin-top: 0.8rem;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-direction: row;
-  border: olive 2px dashed;
 }
-.buttons :nth-child(2) {
-  background-color: royalblue;
-}
+
 button {
-  padding: 0.5rem;
-  background-color: green;
+  padding: 1rem;
   border: none;
   border-radius: 0.2rem;
   align-self: center;
-
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 button:hover,
-button:focus {
+button:active {
   cursor: pointer;
   opacity: 0.5;
 }
-
-button:active,
 button:focus {
   outline: none;
-  border: none;
+  opacity: 1;
+  color: black;
+}
+.blue {
+  background-color: royalblue;
+}
+.green {
+  background-color: green;
 }
 .phone {
   align-items: flex-end;
